@@ -21,8 +21,8 @@ class TgPython < Formula
     system "make"
     system "make", "tg-timer-py"
     prefix.install "tg-timer-py"
-    bin.install "tg-timer"
-    man1.install "docs/tg-timer.1"
+    bin.install "tg-timer-py"
+    man1.install "docs/tg-timer-py.1"
   end
 
   test do
