@@ -1,7 +1,7 @@
 class TgTimer2 < Formula
   desc "Tool for timing mechanical watches"
   homepage "https://tg.ciovil.li"
-  url "https://github.com/xyzzy42/tg.git" 
+  url "https://github.com/xyzzy42/tg.git" , :tag => "v0.6.0-tpiepho"
   head "https://github.com/xyzzy42/tg.git", :branch => "trentpi/python"
 
   depends_on "pkg-config" => :build
