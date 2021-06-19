@@ -19,14 +19,14 @@ class TgPython < Formula
     system "./autogen.sh"
     system "./configure"
     system "make"
-    system "make", "tg-timer-dbg"
-    prefix.install "tg-timer-dbg"
+    system "make", "tg-timer-py"
+    prefix.install "tg-timer-py"
     bin.install "tg-timer"
     man1.install "docs/tg-timer.1"
   end
 
   test do
     mkdir "#{testpath}/.config"
-    system "#{prefix}/tg-timer-dbg", "test"
+    system "#{prefix}/tg-timer-py", "test"
   end
 end
