@@ -1,1 +1,1 @@
-# Homebrew-TG-Python
+# Homebrew-tg-python
