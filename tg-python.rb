@@ -17,7 +17,7 @@ class TgPython < Formula
     ENV["LIBTOOL"] = "glibtool"
     ENV["LIBTOOLIZE"] = "glibtoolize"
     system "./autogen.sh"
-    system "./configure"
+    system "./configure --with-python"
     system "make"
     system "make", "tg-timer-dbg"
     prefix.install "tg-timer-dbg"
